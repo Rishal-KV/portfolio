@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Mail, Phone, MapPin, Briefcase, ExternalLink, Sun, Moon, GraduationCap } from "lucide-react";
+import { Mail, Phone, MapPin, Briefcase, ExternalLink, Sun, Moon, GraduationCap, FileDown } from "lucide-react";
 
 export default function Home() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -127,9 +127,29 @@ export default function Home() {
           <h1 className="dev-name">Rishal K V</h1>
           <p className="dev-title">MERN Stack Developer</p>
         </div>
-        <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle visual theme">
-          {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
+        <div className="header-actions" style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+          <a 
+            href="/resume-rishal.pdf" 
+            download="resume-rishal.pdf" 
+            className="theme-toggle-btn" 
+            aria-label="Download CV"
+            style={{ 
+              textDecoration: "none", 
+              gap: "8px", 
+              padding: "10px 16px", 
+              fontSize: "0.85rem", 
+              fontWeight: "600",
+              display: "inline-flex",
+              alignItems: "center"
+            }}
+          >
+            <FileDown size={14} className="icon-sub" />
+            <span>Download CV</span>
+          </a>
+          <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle visual theme">
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </div>
       </header>
 
       {/* Main Grid: Split Layout */}
