@@ -124,8 +124,8 @@ export default function Home() {
       {/* Header Bar */}
       <header className="dashboard-header">
         <div>
-          <h1 className="dev-name">Rishal</h1>
-          <p className="dev-title">Passionate MERN & Next.js Developer</p>
+          <h1 className="dev-name">Rishal K V</h1>
+          <p className="dev-title">MERN Stack Developer</p>
         </div>
         <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle visual theme">
           {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
