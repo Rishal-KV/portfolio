@@ -33,14 +33,14 @@ export default function Home() {
 
   const jobs = [
     {
-      role: "Next.js Developer",
+      role: "Frontend Developer",
       company: "Progbiz",
       duration: "Sept 2025 - Present",
       location: "Kannur, Kerala",
       bullets: [
-        "Architecting robust, high-performance user interfaces in Next.js using CSS Modules and Shadcn UI.",
-        "Developing scalable server-side systems and building headless CMS pipelines to distribute dynamic contents.",
-        "Refactoring API queries and routing models to deliver outstanding SEO values and loading performance."
+        "Architected high-performance web applications in Next.js utilizing Server-Side Rendering (SSR) to ensure instant initial page loads and seamless user experiences.",
+        "Refactored complex routing models, minimized page load times, and optimized Core Web Vitals to deliver outstanding SEO values and search engine indexability.",
+        "Developed modular, accessible frontend interfaces using CSS Modules and Shadcn UI, seamlessly integrated with headless CMS pipelines."
       ]
     },
     {
@@ -101,7 +101,7 @@ export default function Home() {
     },
     {
       title: "Zaitoon Campus — School Portal",
-      desc: "Dynamic academic site using Next.js with a secure Strapi headless CMS dashboard for staff announcments.",
+      desc: "A high-performance school website engineered with Next.js, featuring optimized Server-Side Rendering (SSR) and seamless dynamic content updates powered by a Strapi headless CMS.",
       tech: "Next.js, Strapi CMS, REST APIs",
       link: "https://zaitooncampus.com/"
     },
